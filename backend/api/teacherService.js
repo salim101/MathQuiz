@@ -33,6 +33,7 @@ function getById(id, callback) {
     connection.connect();
     connection.query('SELECT * FROM teachers WHERE id=? ', [id], function(err, rows) {
         if (err) {
+            console.log(err);
             teacher = null;
         } else {
             if( typeof rows[0] === 'undefined')
