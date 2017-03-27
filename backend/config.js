@@ -1,6 +1,6 @@
 exports.server = {
 	port : 3000,
-	addr : '0.0.0.0'
+	addr : '83.212.82.7'
 }
 
 exports.token = {
@@ -13,7 +13,7 @@ exports.crypto = {
 };
 
 exports.database = {
-	host : "localhost",
+	host : "83.212.82.7",
 	user : "root",
 	pass : "",
 	name : "fypdb"
