@@ -11,6 +11,8 @@ const authService = require('./services/authentication-service');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+app.use(express.static('dist'))
+
 var router = express.Router();
 
 //router.use(authService.intercept);
