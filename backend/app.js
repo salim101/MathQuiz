@@ -11,7 +11,7 @@ const authService = require('./services/authentication-service');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('dist'))
+//app.use(express.static('dist'))
 
 var router = express.Router();
 
@@ -341,7 +341,7 @@ router.route('/parent/:id/countansweredquizzes')
 
 app.use('/api', router);
 
-app.use(express.static('../frontend/dist'));
+//app.use(express.static('../frontend/dist'));
 app.listen(server_config.port, server_config.addr, function (req, res) {
   console.log("Listening at http://%s:%s", server_config.addr, server_config.port);
 });
