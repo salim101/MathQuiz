@@ -130,7 +130,9 @@ router.route('/teacher/:id/deregister')
 
 router.route('/teacher/:id')
       .get(function(req, res) {
+	console.log(req);
         teacherService.getById(req.params.id, function(result){
+		console.log(result);
             res.json(result);
         });
       });
