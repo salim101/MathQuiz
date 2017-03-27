@@ -1,5 +1,5 @@
 exports.server = {
-	port : 3000,
+	//port : 3000,
 	addr : '83.212.82.7'
 }
 
